@@ -1,0 +1,195 @@
+* {
+  color: whitesmoke;
+  box-sizing: border-box;
+}
+body {
+  font-family: "roboto", sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(rgb(54, 107, 107), rgb(45, 94, 94), #222);
+  background-repeat: no-repeat;
+  background-size: 100% 200%;
+}
+.container {
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, .5);
+  overflow: auto;
+  
+}
+.contenu {
+  width: 80%;
+  position: relative;
+  display: block;
+  max-width: 900px;
+  margin: auto;
+  padding: 8px;
+  margin-top: 10%;
+  height: 400px;
+  background-color: white;
+  border-radius: 12px;
+  animation: form 1s;
+  box-shadow: 0 0 30px black;
+}
+.contenu input[type=text] {
+  padding: 15px;
+  border-radius: 12px;
+  color: black;
+  margin: 0px auto 25px auto;
+  width: 100%;
+  font-size: 20px;
+  box-sizing: border-box;
+  outline: none;
+  border-inline: 4px solid blue;
+}
+.contenu input:focus {
+  outline: none;
+  border-inline-color: initial;
+  border-width: 4px;
+  transition: .4s;
+  box-shadow: 0 1px 30px powderblue;
+  animation: input 2s infinite;
+}
+@keyframes input {
+  25% {border-top-color: powderblue};
+  50%  {border-right-color: powderblue};
+  75% {border-bottom-color: powderblue};
+  100% {border-left-color: powderblue};
+}
+@keyframes form {
+  from {transform: scale(0)};
+  to {transform: scale(1)};
+}
+.contenu button {
+  background: linear-gradient(rgb(67, 141, 141), aqua);
+  padding: 12px;
+  position: absolute;
+  color: white;
+  bottom: 75px;
+  right: 10px;
+  width: 50%;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 12px;
+}
+.contenu button:hover {
+  cursor: pointer;
+  background-color: rgb(128, 153, 156);
+  transition: .2s;
+}
+.contenu h1 {
+  text-align: center;
+  padding-top: 50px;
+  color: black;
+  margin-bottom: 50px
+}
+.close {
+  position: absolute;
+  top: 13px;
+  right: 35px;
+  color: black;
+  font-size: 40px;
+  transition: .3s;
+}
+.close:hover {
+  color: rgb(224, 209, 209);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.addButton {
+  font-size: 20px;
+  font-weight: bold;
+  background: linear-gradient(rgb(88, 177, 177), aqua);
+  padding: 40px 30px;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin: auto;
+  margin-bottom: 100px;
+}
+.addButton:hover {
+  background-color: powderblue;
+  cursor: pointer;
+}
+
+.add {
+  background: linear-gradient(rgba(88, 177, 188), aqua);
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 8px 12px 8px 12px;
+  text-align: center;
+}
+.logo {
+  font-family: Tahoma, verdana,sans-serif;
+  text-shadow: 0 0 8px powderblue;
+  color: white;
+  font-size: 18px;
+  margin-block: 8px;
+}
+.bar {
+  background: black;
+  border-radius: 7px;
+  display: flex;
+  justify-content: space-between;
+  padding: 6px;
+  padding-inline: 15px;
+  margin-bottom: 100px;
+  width: 100%;
+  align-items: center;
+}
+
+table {
+  width: 95%;
+  text-align: center;
+  margin-inline: auto;
+  border-collapse: collapse;
+}
+th {
+  padding: 12px;
+  font-size: 1.3rem;
+  background: linear-gradient(green, rgb(100, 182, 33), rgba(20, 255, 20, .3));
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+td {
+  padding-block: 25px;
+}
+.checkbox input[type="checkbox"] {
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 4px;
+  border: 2px solid green;
+  background-color: #ddd;
+  cursor: pointer;
+  position: relative
+}
+.checkbox input:checked {
+  background-color: darkgreen;
+}
+.checkbox input:checked::after {
+  content: '\2714';
+  font-size: 14px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.entity {
+  text-align: right;
+  position: static;
+  color:black
+}
+.entity:hover {
+  cursor: pointer;
+  color: red;
+  transition: .3s;
+}

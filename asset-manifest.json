@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/gestionnaire_de_tache/static/js/main.a6ce5892.js",
+    "index.html": "/gestionnaire_de_tache/index.html",
+    "main.a6ce5892.js.map": "/gestionnaire_de_tache/static/js/main.a6ce5892.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.a6ce5892.js"
+  ]
+}
